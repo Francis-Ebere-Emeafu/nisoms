@@ -3,7 +3,7 @@
   <section class="w3l-header-4">
       <div class="container">
           <nav class="navbar navbar-expand-lg navbar-light">
-              <h1><a class="navbar-brand" href="index.html">
+              <h1><a class="navbar-brand" href="{% url 'home' %}">
                       NISOMS
                   </a></h1>
               <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -29,18 +29,20 @@
                       <li class="nav-item @@about__active">
                           <a class="nav-link" href="{% url 'sponsors' %}">Sponsors</a>
                       </li>
-                      <li class="nav-item @@about__active">
+                      <!-- <li class="nav-item @@about__active">
                           <a class="nav-link" href="{% url 'registration' %}">Registration</a>
-                      </li>
+                      </li> -->
                       <li class="nav-item @@contact__active">
                           <a class="nav-link" href="{% url 'contact' %}">Contact</a>
                       </li>
                   </ul>
                   <ul class="navbar-nav search-right mt-lg-0 mt-2">
-                      <li class="nav-item mr-2" title="Search"><a href="#search" class="btn search-search">
-                              <span class="fa fa-search" aria-hidden="true"></span></a></li>
-                      <li class="nav-item"><a href="contact.html"
-                              class="btn btn-primary d-none d-lg-block btn-style mr-3">Request a Quote</a></li>
+                      <!-- <li class="nav-item mr-2" title="Search">
+                        <a href="#search" class="btn search-search"> <span class="fa fa-search" aria-hidden="true"></span></a>
+                      </li> -->
+                      <li class="nav-item">
+                        <a href="{% url 'registration' %}" class="btn btn-primary d-none d-lg-block btn-style mr-3">Register</a>
+                      </li>
                   </ul>
 
                   <!-- //toggle switch for light and dark theme -->
@@ -57,7 +59,7 @@
                   <!-- /search popup -->
               </div>
               <!-- toggle switch for light and dark theme -->
-              <div class="mobile-position">
+              <!-- <div class="mobile-position">
                   <nav class="navigation">
                       <div class="theme-switch-wrapper">
                           <label class="theme-switch" for="checkbox">
@@ -69,7 +71,7 @@
                           </label>
                       </div>
                   </nav>
-              </div>
+              </div> -->
           </nav>
       </div>
   </section>

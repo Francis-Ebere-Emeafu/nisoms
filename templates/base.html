@@ -12,31 +12,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
     <!-- Template CSS -->
-    <link rel="stylesheet" href="{% static 'css/style-starter.css' %}">
+    <link href="{% static 'css/style-starter.css' %}" rel="stylesheet" type='text/css' />
+    <!-- <link href="{% static 'css/bootstrap.css' %}" rel='stylesheet' type='text/css' /> -->
+    <!-- <link href="{% static 'css/style.css' %}" rel='stylesheet' type='text/css' /> -->
   </head>
   <body>
 <!-- Header Section Here -->
 {% include 'header.html' %}
 <!-- main-slider -->
-<section class="w3l-main-slider" id="home">
+
+<section class="w3l-main-slider" id=" ">
     <div class="companies20-content">
-        <div class="owl-one owl-carousel owl-theme">
+        <div class=" owl-theme">
             <div class="item">
                 <li>
                     <div class="slider-info banner-view bg bg2">
                         <div class="banner-info">
                             <div class="container">
                                 <div class="banner-info-bg">
-                                    <h5>Disinfecting & Deodorizing <span>Spray services.</span> </h5>
-                                    <p class="mt-md-4 mt-3">Imagine your home so clean, it’s clinically clean. </p>
-                                    <a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="about.html"> Learn
-                                        More</a>
+                                    <h5>Nigerian International Solid <span>Minerals Summit</span> </h5>
+                                    <p class="mt-md-4 mt-3">Changing The Narrative In The Solid Minerals Industry</p>
+                                    <a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="{% url 'registration' %}">Register</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </li>
             </div>
+            {% comment %}
             <div class="item">
                 <li>
                     <div class="slider-info  banner-view banner-top1 bg bg2">
@@ -85,6 +88,7 @@
                     </div>
                 </li>
             </div>
+            {% endcomment %}
         </div>
     </div>
 </section>

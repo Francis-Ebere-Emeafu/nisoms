@@ -142,7 +142,8 @@ a {
   text-decoration: none;
   background-color: transparent; }
   a:hover {
-    color: #405d9e;
+    /* color: #405d9e; */
+    color: var(--primary-color);
     text-decoration: underline; }
 
 a:not([href]) {
@@ -1831,8 +1832,11 @@ fieldset:disabled a.btn {
   border-color: #3b8655; }
   .btn-primary:hover {
     color: #fff;
-    background-color: #4e6eb7;
-    border-color: #4867b0; }
+    background-color: var(--secondary-color);
+    /* #4e6eb7; */
+    border-color: #3b8655;
+    /* #4867b0;  */
+  }
   .btn-primary:focus, .btn-primary.focus {
     color: #fff;
     background-color: #4e6eb7;
@@ -10286,7 +10290,8 @@ button.navbar-toggler.collapsed .icon-expand {
   position: relative; }
 
 .w3l-main-slider .banner-view {
-  background: url(../images/banner1.jpg) no-repeat 0px 0px;
+  /* background: url(../images/banner1.jpg) no-repeat 0px 0px; */
+  background: url(../images/6_sedimentation.jpg) no-repeat 0px 0px;
   background-size: cover;
   min-height: calc(100vh - 100px);
   position: relative;
