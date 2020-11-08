@@ -129,6 +129,6 @@ dmypy.json
 .pyre/
 
 # local settings
-*/local_settings.py
-local_settings.py
+#*/local_settings.py
+#local_settings.py
 fabfile.py

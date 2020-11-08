@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'q+2r9lm-5ss6b#p)!ej93321qu&debzihzx@sgtum!)&tzyva1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'www.nisoms.com', 'nisoms.com']
 
@@ -141,9 +141,3 @@ STATICFILES_DIRS = (
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(STATIC_ROOT, "media")
-
-
-try:
-    from local_settings import *
-except ImportError:
-    pass

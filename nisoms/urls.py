@@ -19,12 +19,12 @@ from django.views.generic import TemplateView, RedirectView
 
 urlpatterns = [
     path("", TemplateView.as_view(template_name='base.html'), name='home'),
-    path("about", TemplateView.as_view(template_name='base.html'), name='home'),
-    path("program", TemplateView.as_view(template_name='base.html'), name='home'),
-    path("speakers", TemplateView.as_view(template_name='base.html'), name='home'),
-    path("sponsors", TemplateView.as_view(template_name='base.html'), name='home'),
-    path("registration", TemplateView.as_view(template_name='base.html'), name='home'),
-    path("contact", TemplateView.as_view(template_name='base.html'), name='home'),
+    path("about", TemplateView.as_view(template_name='base.html'), name='about'),
+    path("program", TemplateView.as_view(template_name='base.html'), name='program'),
+    path("speakers", TemplateView.as_view(template_name='base.html'), name='speakers'),
+    path("sponsors", TemplateView.as_view(template_name='base.html'), name='sponsors'),
+    path("registration", TemplateView.as_view(template_name='base.html'), name='registration'),
+    path("contact", TemplateView.as_view(template_name='base.html'), name='contact'),
 
     path('admin/', admin.site.urls),
 
