@@ -81,18 +81,18 @@ WSGI_APPLICATION = 'nisoms.wsgi.application'
 #     }
 # }
 
-#
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'nisoms_db',
-#         'USER': 'nisoms_db',
-#         'PASSWORD': 'pass.p1985',
-#         'HOST': 'localhost',
-#         'PORT': '',
-#         'PORT': ''
-#     }
-# }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'nisoms_db',
+        'USER': 'nisoms_db',
+        'PASSWORD': 'pass.p1985',
+        'HOST': 'localhost',
+        'PORT': '',
+        'PORT': ''
+    }
+}
 
 
 # Password validation
