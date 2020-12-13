@@ -26,7 +26,7 @@ SECRET_KEY = 'q+2r9lm-5ss6b#p)!ej93321qu&debzihzx@sgtum!)&tzyva1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'www.nisoms.com', 'nisoms.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'nisoms.com', 'www.nisoms.com', '162.243.173.228']
 
 
 # Application definition
